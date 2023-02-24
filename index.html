@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share-Profile | Preetam Singh</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--circles-->
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <!--card-->
+        <div class="card">
+            <div class="pic">
+                <img src="./assets/mee.jpg" class="profilepic" alt="Profile Picture">
+            </div>
+            <div class="nameplate">
+                <h2>Preetam Singh</h2>
+            </div>
+            <div class="designation">
+                <h3>Full Stack WebDeveloper</h3>
+            </div>
+            <div class="share-option">
+                <div onclick="openModal()"  class="btn">
+                    <i class="fa-solid fa-share"></i>
+                    Share My Profile
+                </div>
+                <div class="btn">Follow Me</div>
+            </div>
+        </div>
+    </div>
+
+    <!--popup window on click-->
+    <div class="modal">
+        <div class="pop">
+            <div class="modal-head" >
+                <h1>Share My Profile</h1>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+            <h3>Share this via</h3>
+            <div class="icons">
+                <i class="fa-brands fa-facebook facebook"></i>
+                <i class="fa-brands fa-twitter twitter"></i>
+                <i class="fa-brands fa-instagram instagram"></i>
+                <i class="fa-brands fa-whatsapp whatsapp"></i>
+                <i class="fa-brands fa-telegram telegram"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+    <!--fontawesome icon-->
+    <script src="https://kit.fontawesome.com/008e20a825.js" crossorigin="anonymous"></script>
+    <!--js file-->
+    <script src="./index.js" ></script>
+</body>
+
+</html>
